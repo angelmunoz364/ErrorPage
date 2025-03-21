@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Error 404!</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 6rem;
+            color: #ff4c4c;
+            animation: shake 0.8s infinite;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 20px;
+        }
+        button {
+            padding: 12px 24px;
+            background-color: #ff4c4c;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #e04343;
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+        .emoji {
+            font-size: 5rem;
+            animation: float 2s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Error 404!</h1>
+    <div class="emoji">😢</div>
+    <p>La página que buscas está tan caída… que hasta el WiFi se fue a llorar.</p>
+    <button onclick="location.reload()">Reintentar</button>
+</body>
+</html>
